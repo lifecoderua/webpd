@@ -5,6 +5,6 @@ export class Render {
   render(map) {
     this.target.innerHTML = ''
 
-    map.map.map( (row) => this.target.innerHTML += `${row.join('')}<br>` )
+    map.combinedMap.map( (row) => this.target.innerHTML += `${row.join('')}<br>` )
   }
 }
