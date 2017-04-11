@@ -1,5 +1,4 @@
 export class Render {
-  // map = []
   target = document.getElementById('render-target')
 
   render(map) {
