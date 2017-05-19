@@ -1,7 +1,7 @@
 module.exports = {
  entry: './src/core.ts',
  output: {
-   filename: './dist/bundle.js'
+   filename: './dist/build/bundle.js'
  },
  module: {
    rules: [
@@ -25,5 +25,10 @@ module.exports = {
  resolve: {
    extensions: [".ts", ".js"]
  },
- devtool: 'inline-source-map'
+ devtool: 'inline-source-map',
+ devServer: {
+    publicPath: "/",
+    contentBase: "./dist",
+    hot: true
+ }
 };

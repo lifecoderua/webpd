@@ -2,15 +2,6 @@ import { Extra } from './extra'
 import { Render } from './render'
 import { Map } from './map'
 
-
-declare module "*!text" {
-  const content: string;
-  export default content;
-}
-import html from '../index.html!text'
-// require('copy!../index.html')
-
-
 var map
 var render
 
